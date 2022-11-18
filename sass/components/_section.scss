@@ -1,0 +1,18 @@
+.section {
+    padding: 94px 0;
+}
+
+.section--small {
+    padding-top: 0;
+}
+
+.section__title {
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--secondary-text-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}

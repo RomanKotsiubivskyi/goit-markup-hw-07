@@ -1,0 +1,35 @@
+.сustomers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.сustomers__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.сustomers__linc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--primary-icon-color);
+    border-radius: 4px;
+    fill: currentColor;
+
+    color: var(--primary-icon-color);
+    width: 170px;
+    height: 92px;
+    background-color: var(--white-color);
+
+    transition-property: color, background-color, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+        &:focus {
+            background-color: var(--white-color);
+            color: var(--accent);
+            border-color: var(--accent);
+        }
+}
+

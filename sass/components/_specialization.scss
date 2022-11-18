@@ -1,0 +1,33 @@
+.specialty {
+    display: flex;
+}
+
+
+
+.specialty__item {
+    position: relative;
+
+    width: 370px;
+
+    &:not(:last-child) {
+            margin-right: 30px;
+        }
+}
+
+.specialty__title {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    text-align: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    color: var(--white-color);
+    background-color: rgba(47, 48, 58, 0.8);
+
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
