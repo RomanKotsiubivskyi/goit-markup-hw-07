@@ -1,12 +1,44 @@
 .header {
   border-bottom: 1px solid #ececec;
 }
+// .g {
+//   display: inline-flex;
+//   width: 480px;
+//   align-items: center;
+//   justify-content: space-between;
+// }
+
+.header__burger-menu {
+  position: absolute;
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  top: 10px;
+  right: 15px;
+
+  @media (min-width: 480px) {
+    display: none;
+  }
+}
 
 .header__container {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
+.menu-container {
+  display: none;
+  width: 100%;
+  justify-content: space-between;
+  margin-left: 93px;
+
+  @media (min-width: 480px) {
+    display: flex;
+  }
+}
+
 .header__nav {
   display: flex;
   align-items: center;
@@ -14,7 +46,6 @@
 
 .site-nav {
   display: flex;
-  margin-left: 93px;
 }
 
 .site-nav__item:not(:last-child) {
